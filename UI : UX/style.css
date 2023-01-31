@@ -1,0 +1,151 @@
+* {
+  font-family: "Open Sans Hebrew", "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+p,
+h1 {
+  margin: 0;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+h4 {
+  font-family: "Itim", cursive;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.text-color {
+  color: #323233;
+} 
+/* Header all Page */
+header {
+  height: 60px;
+  background: #323233;
+  display: flex;
+  align-items: center;
+}
+header nav .links {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .links a {
+  color: #d6d6d6;
+  text-decoration: none;
+  font-family: "Open Sans Hebrew", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: bold;
+}
+header nav .links a:hover {
+  color: #f5f5f7;
+}
+.burger {
+  display: none;
+}
+/* Footer all Page */
+footer .right a {
+  font-size: 30px;
+}
+footer .container .left p {
+  font-size: 20px;
+}
+/* Home Page */
+.height-img{
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.bg-dark {
+  background-color: #323233;
+  opacity: 0.7;
+}
+section .text-center a:hover {
+  text-decoration: none;
+}
+/* About Page */
+.card:hover {
+  transform: scale(1.05);
+}
+/* Galery Page */
+.col:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+/* FAQ Page */
+.bg-accordion {
+  background: #cfe1ff;
+}
+
+
+
+
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  header nav .links {
+    width: 60%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  .burger {
+    display: block;
+    color: azure;
+    font-size: 30px;
+  }
+  header nav .links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background: #323233;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 1;
+  }
+  header nav .links a {
+    padding: 15px 0;
+    border-bottom: 1px solid azure;
+  }
+
+  header nav .links a img {
+    display: none;
+    height: 0px;
+  }
+  .height {
+    height: 400px;
+  }
+  main button .color {
+    color: #323233;
+  }
+  footer .left {
+    order: 1;
+    margin: 0 auto;
+  }
+  footer .container .left p {
+    font-size: 16px;
+    text-align: center;
+  }
+  footer .right {
+    margin: 7px auto;
+  }
+  .shadow,
+  .radius {
+    box-shadow: none !important;
+    radius: none;
+  }
+}
